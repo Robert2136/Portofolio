@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/ostrich-sans-2');
+
+@font-face {
+  font-family: OstrichSans;
+  src: url(./fonts/OstrichSans-Bold.otf);
+}
+@font-face {
+  font-family: OstrichSansHeavy;
+  src: url(./fonts/OstrichSans-Heavy.otf);
+}
+@font-face {
+  font-family: OstrichSansLight;
+  src: url(./fonts/OstrichSans-Light.otf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-size:cover;
+    overflow-x: hidden;
+    
+}
+
+.header-section{
+  position: absolute;
+  display: flex;
+  width: 20%;
+  height: 10%;
+  z-index: 99;
+  top: 3%;
+  left: 3%;
+}
+
+#project-name {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "OstrichSansHeavy";
+  font-style: oblique;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+
+.main-div-text {
+  position: absolute;
+  display: flex;
+  width: 30%;
+  height: 60%;
+  z-index: 99;
+  top: 20%;
+  left: 6%;
+}
+
+.name-text {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "OstrichSans";
+  font-size: 10em;
+}
+
+#position-name {
+  position: absolute;
+  top: 0%;
+}
+#position-surrname{
+  position: absolute;
+  top: 35%;
+  left: 20%;
+}
+
+/* WRITING SECTION */
+.writing-section {
+  position: absolute;
+  bottom: 2%;
+  color: #ffffff;
+  font-family: "tahoma";
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 550px;
+  z-index: 99;
+}
+
+.writing-section span {
+  font-size: 40px;
+  margin-left: 40px;
+}
+
+.message {
+  background-color: rgb(255, 255, 255);
+  color: #333;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  position: absolute;
+  padding-left: 0.5rem;
+  top: 0.2rem;
+  left: 270px;
+  animation: openclose 5s ease-in-out infinite;
+}
+
+.word1, .word2, .word3 {
+  font-family: "OstrichSansHeavy";
+}
+#creating-style {
+  font-style: oblique;
+}
+
+#close-style {
+  position: relative;
+  left: 10%;
+  font-stretch:ultra-expanded;
+}
+
+@keyframes openclose {
+  0% {
+    top: 0.2rem;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 230px;
+  }
+  30% {
+    top: 0.2rem;
+    width: 230px;
+  }
+  33% {
+    top: 0.2rem;
+    width: 0;
+  }
+  35% {
+    top: 0.2rem;
+    width: 0;
+  }
+  38% {
+    top: -4.5rem;
+    
+  }
+  48% {
+    top: -4.5rem;
+    width: 190px;
+  }
+  62% {
+    top: -4.5rem;
+    width: 190px;
+  }
+  66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  86% {
+    top: -9rem;
+    width: 285px;
+  }
+  95% {
+    top: -9rem;
+    width: 285px;
+  }
+  98% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
+
+.photo {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 25%;
+}
+
+.photo img {
+  position: relative;
+  top: 40%;
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  filter: grayscale(90%) contrast(120%);
+  /* box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .2); */
+  display: inline-block;
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-top: -10px;
+  opacity: 100%;
+}
+
+.photo:hover img {
+  /* box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .1); */
+  height: 30vh;
+  opacity: 50%;
+  filter: grayscale(10%) contrast(120%);
+}
+
+.photo .glow-wrap {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  margin-top: -10px;
+}
+
+.photo .glow {
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.232);
+  top: 0;
+  filter: blur(5px);
+  transform: rotate(45deg) translate(-450%, 0);
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover .glow {
+  transform: rotate(45deg) translate(450%, 0);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover img,
+.photo:hover .glow-wrap {
+  margin-top: 0;
+}
+
+#photo-name {
+  position: absolute;
+  z-index: 1;
+  transform: translate(-40%, -500%);
+  font-family: 'OstrichSansLight';
+  font-style: oblique;
+  margin: 0;
+  line-height: 1.2;
+  color: #ffffff68;
+}
+
+/* ABOUT ME TEXT EFFECT */
+
+#postion-about-me{
+  position: absolute;
+  right: 9%;
+  bottom:-100%;
+}
+.about-text {
+  text-decoration: none;
+  font-family: 'OstrichSans';
+  font-size: 8rem;
+  color: #ffffff;
+  z-index: 2;
+  line-height: 40px;
+  padding: 0;
+}
+.about-text:hover{
+  border: none;
+}
+.about-text:before,
+.about-text:after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  border: 2px solid;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.about-text:before {
+  position: absolute;
+  top: -70%;
+  left: -10%;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #ffffff;
+  border-left-color: #ffffff;
+}
+.about-text:after{
+  top: -40%;
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #ffffff;
+  border-right-color: #ffffff;
+}
+.about-text:hover:before,
+.about-text:hover:after {
+  border-color: #ffffff;
+  height: 200%;
+  width: 100%;
+}
+
+
+/* EDUCATION TEXT EFFECT */
+
+
+#postion-education {
+  position: absolute;
+  z-index: 2;
+  left: 14%;
+  bottom:-170%;
+}
+
+/* EXPERIENCE TEXT EFFECT */
+#postion-experience {
+  position: absolute;
+  z-index: 2;
+  right: 9%;
+  bottom:-290%;
+}
+
+/* PORTOFOLIO TEXT EFFECT */
+#postion-portofolio {
+  position: absolute;
+  z-index: 2;
+  left: 14%;
+  bottom:-450%;
+}
+
+
+
+#position-contact {
+  position: fixed;
+  z-index: 2;
+  right: 9%;
+  bottom:60%;
+  transform: translate(-20%, -60%);
+}
+
+/* SCROLL DOWN SECTION */
+
+
+
+.container-scroll {
+  position: absolute;
+  top: 87%;
+  left: 40%;
+	display: flex;
+	justify-content: center;
+  align-items: center;
+  z-index: 80;
+  opacity: 50%;
+  width: 20%;
+  height:15%;
+}
+.container-scroll p {
+  color: #ffffff;
+  position: absolute;
+  top: 0%;
+  opacity: 50%;
+  font-family: "OstrichSans";
+  text-transform: lowercase;
+}
+
+.field-scroll {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 300px;
+}
+
+.mouse {
+	width: 20px;
+	height: 50px;
+	border: 2px solid #ffffff;
+	border-radius: 60px;
+	position: relative;
+	&::before {
+		content: '';
+		width: 8px;
+		height: 8px;
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #ffffff;
+		border-radius: 50%;
+		opacity: 1;
+		animation: wheel 2s infinite;
+		-webkit-animation: wheel 2s infinite;
+	}
+}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 35px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}

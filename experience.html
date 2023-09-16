@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="experience-style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+    <main id="main-page">
+        <section class="container">
+            <!-- EXPERIENCE -->
+            <div class="text-experience">
+                <h2 id="experience-section">My Experience</h2>
+                <article class="job-position">
+                    <p class="about-me">Mechanical Design Engineer & Project Manager</p>
+                    <p class="job-status">PSC Automation. | Sep. 2020 to present</p>
+                    <p class="job-description">Led projects as a proficient Project Manager & Mechanical Design
+                        Engineer, overseeing end-to-end processes with precision and technical expertise
+                    </p>
+                </article>
+                <article class="job-position">
+                    <p class="about-me">Junior Team Leader- Body & Aerodynamics department</p>
+                    <p class="job-status">Formula Student | Nov. 2022 to Feb 2023 </p>
+                    <p class="job-description">As a Junior Team Leader in the Formula Student project, I provided
+                        guidance to team members, managed tasks and contributed to vehicle design, fabrication and
+                        competition preparations.
+                    </p>
+                </article>
+                <article class="job-position">
+                    <p class="about-me">Mechanical Design (CATIA)</p>
+                    <p class="job-status">Formula Student | Mar. 2020 to Nov. 2022 </p>
+                    <p class="job-description">As a mechanical designer for Formula Student project I lead component
+                        development, CAD modeling and ensuring optimal performance in competition.
+                    </p>
+                </article>
+            </div>
+            <!-- COURSES -->
+            <div class="text-courses">
+                <h2 id="courses-section">Courses</h2>
+                <article class="job-position">
+                    <p class="about-me">Web Development (JavaScript)</p>
+                    <p class="job-status">Scoala informala de IT | May. 2023 to present</p>
+                    <p class="job-description">This course is dedicated to deepen the knowledge in web development field
+                        and to prepare students for a junior job in frontend development.<br>
+                        <span class="skills-gained">
+                            Main skills gained: JavaScrip, HTML, CSS, React, Git.
+                        </span>
+                    </p>
+                </article>
+                <article class="job-position">
+                    <p class="about-me">Intro in IT </p>
+                    <p class="job-status">
+                        Scoala informala de IT| Mar. 2023 to May 2023
+                    </p>
+                    <p class="job-description">
+                        This course was designed to provide students with a solid foundation in IT usingthree essential technologies: JavaScript, HTML, and CSS.<br>
+                        I gained a strong understanding of JavaScript as a programming language(functions, loops, objects, statements, DOM manipulation).<br>
+                        Software Testing and Agile methodology were strong topics in which I learned how to ensure quality, collaboration, and adaptability in dynamic development environments. <br>
+                        <span class="skills-gained">
+                            Main skills gained: JavaScrip, HTML, CSS, Software Testing, Agile methodology.
+                        </span>
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <div class="ball">
+        <button class="play-button" id="reset-button">Reset!
+        </button>
+    </div>
+    <div class="ball-skip">
+        <button class="play-button" id="skip-button2">Skip the game!
+        </button>
+    </div>
+    <section id="game-section">
+        <h1 id="description-text">In order to see 'Experience' section you have to make <span id="score-to-win"></span>
+            points at snake game.</h1>
+        <label class="dificulty-text" for="dificulty">
+            Choose the dificulty:
+        </label>
+        <select name="the-dificulty" id="game-dificulty" onkeydown="return false;">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+            <option value="pro">Pro</option>
+        </select>
+        <p class="score-text">You have <span id="score">0</span> <span id="points-detail">points</span></p>
+        <canvas id="board"></canvas>
+        <div class="explain-text">
+            <p>In order to move the snake press "Up", "Down", "Left" and "Right" buttons on your keyboard</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="experience.js"></script>
+
+</body>

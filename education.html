@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="experience-style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+    <main id="main-page">
+        <section class="container">
+            <!-- EXPERIENCE -->
+            <div class="text-experience">
+                <h2 id="experience-section">Education</h2>
+                <article class="job-position">
+                    <p class="about-me">Master - Virtual Engineering for Competitive Manufacturing</p>
+                    <p class="job-status">Technical University of Cluj-Napoca- Machine Building Faculty | 2020 to 2022</p>
+                    <!-- <p class="job-description">Led projects as a proficient Project Manager & Mechanical Design
+                        Engineer, overseeing end-to-end processes with precision and technical expertise
+                    </p> -->
+                </article>
+                <article class="job-position">
+                    <p class="about-me">Bachelor Degree - Industrial Engineering</p>
+                    <p class="job-status">Technical University of Cluj-Napoca- Machine Building Faculty | 2016 to 2020 </p>
+                    <!-- <p class="job-description">As a Junior Team Leader in the Formula Student project, I provided
+                        guidance to team members, managed tasks and contributed to vehicle design, fabrication and
+                        competition preparations.
+                    </p> -->
+                </article>
+                <article class="job-position">
+                    <p class="about-me">High School - Specialization Economics</p>
+                    <p class="job-status">High school "Ion-Creanga" | Targu Neamt | 2012 - 2016 </p>
+                    <!-- <p class="job-description">As a mechanical designer for Formula Student project I lead component
+                        development, CAD modeling and ensuring optimal performance in competition.
+                    </p> -->
+                </article>
+            </div>
+        </section>
+    </main>
+    <div class="ball">
+        <button class="play-button" id="reset-button">Reset!
+        </button>
+    </div>
+    <div class="ball-skip">
+        <button class="play-button" id="skip-button2">Skip the game!
+        </button>
+    </div>
+    <section id="game-section">
+        <h1 id="description-text">In order to see 'Experience' section you have to make <span id="score-to-win"></span>
+            points at snake game.</h1>
+        <label class="dificulty-text" for="dificulty">
+            Choose the dificulty:
+        </label>
+        <select name="the-dificulty" id="game-dificulty" onkeydown="return false;">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+            <option value="pro">Pro</option>
+        </select>
+        <p class="score-text">You have <span id="score">0</span> <span id="points-detail">points</span></p>
+        <canvas id="board"></canvas>
+        <div class="explain-text">
+            <p>In order to move the snake press "Up", "Down", "Left" and "Right" buttons on your keyboard</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="experience.js"></script>
+
+</body>
