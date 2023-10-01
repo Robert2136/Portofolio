@@ -81,7 +81,7 @@ var playTheGame = function() {
     console.log(board);
     board.height = rows * blockSize;
     board.width = cols * blockSize;
-    context = board.getContext("2d"); // used for drawing on the board
+    context = board.getContext("2d");
 
     console.log(skipButton[0]);
     
@@ -105,6 +105,7 @@ var playTheGame = function() {
         console.log(dificulty);
     }
     else if(getDificulty.value == "medium") {
+        debugger
         dificulty = dificultyMedium
         intervalId = setInterval(update, dificulty);
         console.log(dificulty);
@@ -154,7 +155,7 @@ function update() {
         console.log(snakeBody[i]);
     }
 
-    // Update the value of Snake Body position with the last position (snake body head)
+    // Update the value of Snake Body position with the last position
     if(snakeBody.length) {
         snakeBody[0] = [snakeX, snakeY]
         // console.log(snakeBody[0]);

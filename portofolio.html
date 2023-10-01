@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="portofolio-style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+    <main id="main-page">
+        <section class="container-main">
+            <!-- EXPERIENCE -->
+            <div class="text-experience">
+                <h2 class="main-title" >My Projects</h2>
+            </div>
+            <div class="container">
+                <div>
+                    <a href="https://robert2136.github.io/add-to-cart/" class="content" target="_blank">
+                        <h2 class="porject-title">Add to Cart</h2>
+                        <span>Made with React</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="./my projects/Rock_Paper_Scissors/index.html" class="content" target="_blank">
+                        <h2 class="porject-title">Rock-Paper-Scissors</h2>
+                        <span>Made with vanilla Java Script</span>
+                    </a>
+                </div>
+                <!-- <div>
+                    <a href="./my projects/Rock_Paper_Scissors/index.html" class="content" target="_blank">
+                        <h2>Emily New</h2>
+                        <span>Web Designer</span>
+                    </a>
+                </div>
+                <div>
+                    <div class="content">
+                        <h2>Lisa Boley</h2>
+                        <span>Marketing Coordinator</span>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <div class="ball">
+        <button class="play-button" id="reset-button">Reset!
+        </button>
+    </div>
+    <div class="ball-skip">
+        <button class="play-button" id="skip-button2">Skip the game!
+        </button>
+    </div>
+    <section id="game-section">
+        <h1 id="description-text">In order to see 'Experience' section you have to make <span id="score-to-win"></span>
+            points at snake game.</h1>
+        <label class="dificulty-text" for="dificulty">
+            Choose the dificulty:
+        </label>
+        <select name="the-dificulty" id="game-dificulty" onkeydown="return false;">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+            <option value="pro">Pro</option>
+        </select>
+        <p class="score-text">You have <span id="score">0</span> <span id="points-detail">points</span></p>
+        <canvas id="board"></canvas>
+        <div class="explain-text">
+            <p>In order to move the snake press "Up", "Down", "Left" and "Right" buttons on your keyboard</p>
+        </div>
+    </section>
+
+    <script src="experience.js"></script>
+
+</body>

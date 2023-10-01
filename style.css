@@ -346,9 +346,10 @@ body{
 #position-contact {
   position: fixed;
   z-index: 2;
-  right: 9%;
+  right: 16%;
   bottom:60%;
-  transform: translate(-20%, -60%);
+ 
+  font-size: 6em;
 }
 
 /* SCROLL DOWN SECTION */
@@ -417,4 +418,91 @@ body{
 		opacity: 0;
 		top: 60px;
 	}
+}
+
+#take-footer {
+  position: fixed;
+  z-index: 2;
+  right: 23%;
+  bottom:36%;
+  transform: translate(-20%, -60%);
+}
+
+.fa-yahoo{
+  color: #fff;
+  width: 40px;
+}
+.fa-whatsapp  {
+  color: #fff;
+  width: 40px;
+}
+.fa-wpforms {
+  color: #fff;
+  width: 40px;
+}
+
+.icon-list {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-list li {
+  list-style: none;
+}
+
+.icon-list li a {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 45px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #c9c9c9;
+  z-index: 1;
+}
+
+.icon-list li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.icon-list li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.icon-list li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+.icon-list li a:hover:before {
+  top: 0;
+}
+
+.icon-list li:nth-child(1) a:before {
+  background: #7a14d4e1;
+}
+
+.icon-list li:nth-child(2) a:before {
+  background: #0077b5;
 }

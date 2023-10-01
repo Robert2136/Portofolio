@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio-Loboda Robert</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-      window.onbeforeunload = function () {
-          window.scrollTo(0, 0);
-      }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio-Loboda Robert</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    }
   </script>
-    
+
 </head>
+
 <body>
+  <!-- -- HEADER -- PORTOFOLIO LOGO  -->
   <header class="header-section">
     <a href="#" id="project-name">Portofolio</a>
   </header>
+
+  <!-- FIRST PAGE -->
   <div class="main-div-text">
     <p class="name-text" id="position-name">Loboda</p>
     <p class="name-text" id="position-surrname">Robert</p>
@@ -28,44 +36,57 @@
       </div>
     </section>
   </div>
+
+<!-- SCROLL DOWN ICON -->
   <div class="container-scroll">
     <p id="scroll-text">Scroll down!</p>
     <div class="field-scroll">
       <div class="mouse"></div>
     </div>
   </div>
-  
+
+  <!-- SCROLL TEXT -->
   <div class="canvas">
-      <a class="about-text" id="postion-about-me" href="./about-me.html" target="_blank">About Me</a>
-      <a class="about-text" id="postion-education" href="./education.html" target="_blank">Education</a>
-      <a class="about-text" id="postion-experience" href="./experience.html" target="_blank">Experience</a>
-      <a class="about-text" id="postion-portofolio" href="./about-me.html" target="_blank">Portofolio</a>
-      <a class="about-text" id="position-contact" href="./about-me.html" target="_blank">Contact me</a>
-      <canvas class="main-canvas"></canvas>
+    <a class="about-text" id="postion-about-me" href="./about-me.html" target="_blank">About Me</a>
+    <a class="about-text" id="postion-education" href="./education.html" target="_blank">Education</a>
+    <a class="about-text" id="postion-experience" href="./experience.html" target="_blank">Experience</a>
+    <a class="about-text" id="postion-portofolio" href="./portofolio.html" target="_blank">Portofolio</a>
+    <a class="about-text" id="position-contact" href="">Contact me on:</a>
+
+    <!-- MAIN CANVA WHERE ARE THE SCROLLING IMAGES -->
+    <canvas class="main-canvas"></canvas>
+  </div>
+
+  <!-- PHOTO OF ME -->
+  <a href="" class="photo">
+    <h1 id="photo-name">Get to know me!</h1>
+    <img src="./photos/me.png" />
+    <div class="glow-wrap">
+      <i class="glow"></i>
     </div>
-    <a href="#" class="photo">
-      <h1 id="photo-name">Get to know me!</h1>
-      <img src="./photos/me.png" />
-      <div class="glow-wrap">
-        <i class="glow"></i>
-      </div>
-    </a>
-    
+  </a>
 
+  <!-- FOOTER WITH CONTACT ME ICONS -->
+  <footer class="footer" id="take-footer">
+    <ul class="icon-list">
+      <li>
+        <a href="mailto: loboda_robert@yahoo.com" target="_blank"><i class="fab fa-yahoo icon"></i></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/robert-gabriel-loboda-b4b3661ab" target="_blank"><i
+            class="fab fa-linkedin-in icon"></i></a>
+      </li>
+    </ul>
+  </footer>
 
-
-
-
-    
-
-
-
-
-
-    
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="main.js"></script>
+  <!-- SCRIPS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main.js"></script>
+  
 </body>
 </html>

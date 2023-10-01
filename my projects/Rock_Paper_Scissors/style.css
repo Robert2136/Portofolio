@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #e66465, #9198e5);
+}
+
+div {
+    position: absolute;
+    flex-basis: 100%; 
+    top: 10rem;
+}
+
+button{
+    width: 8rem;
+    height: 8rem;
+    cursor: pointer;
+    margin: 0 3rem;
+    border-radius: 4rem;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition-duration: 0.4s;
+}
+
+#rock {
+    background-image: url("rock.PNG");
+    background-size: cover;
+    background-size: 6rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#paper {
+    background-image: url("paper.PNG");
+    background-size: cover;
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#scissor {
+    background-image: url("scissor.PNG");
+    background-size: cover;
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#display-text {
+    display: none;
+    position: absolute;
+    top: 20rem;
+}
+
+h4 {
+    position: absolute;
+    top: 5rem;
+    text-align: center;
+
+}
+h1 {
+    margin-top: 1rem;
+}
+

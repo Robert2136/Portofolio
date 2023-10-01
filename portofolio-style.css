@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/ostrich-sans-2');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@font-face {
+  font-family: OstrichSans;
+  src: url(./fonts/OstrichSans-Bold.otf);
+}
+@font-face {
+  font-family: OstrichSansHeavy;
+  src: url(./fonts/OstrichSans-Heavy.otf);
+}
+@font-face {
+  font-family: OstrichSansLight;
+  src: url(./fonts/OstrichSans-Light.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* body{
+  height: 100vh;
+} */
+
+#main-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, #262626 90%);
+  filter: blur(12px);
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+
+
+.ball {
+  position: absolute;
+  width: 8em;
+  height: 8em;
+  top: 10%;
+  left: 5%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+
+@keyframes bounce {
+  
+  0%,
+  20%,
+  60%,
+  100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+    
+    80% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+  }
+  
+  .play-button:hover {
+    animation: bounce 1s;
+  }
+
+  .play-button {
+    background-color: transparent;
+    cursor: pointer;
+    color: #000000;
+    border: 0;
+    cursor: pointer;
+    font-family: 'OstrichSans';
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 1.5em;;
+    transform-style: preserve-3d;
+  }
+  
+  
+  @-webkit-keyframes flash {
+    
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+  
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes flash {
+  
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+    
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+  
+  .cv-photo:hover {
+    opacity: 1;
+    -webkit-animation: flash 1s;
+    animation: flash 1s;
+  }
+  
+ 
+  
+  
+  #game-section {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .ball-skip {
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    top: 75%;
+    left: 87%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+  }
+
+  .explain-text {
+    color: #ffffff;
+    position: relative;
+    top: 2%;
+    font-family:'OstrichSansHeavy';
+    font-size: large;
+    font-style: oblique;
+    font-weight: bold;
+  }
+
+  #description-text {
+    position: absolute;
+    top: 3%;
+    color: #ffffff;
+    font-family: 'OstrichSansLight';
+    font-weight: bolder;
+    font-style: oblique;
+    letter-spacing: 0.15em;
+    font-size: 1.2em;
+  }
+
+ .dificulty-text {
+    color: #ffffff;
+    font-family:'OstrichSansHeavy';
+    font-size: 1em;
+    font-weight: bold;
+    margin: 10px;
+ }
+
+ #score {
+    color: #ffffff;
+    font-family:'OstrichSansHeavy';
+    font-size: 1em;
+    font-weight: bold;
+ }
+.score-text{
+    color: #ffffff;
+    font-family:'OstrichSansHeavy';
+    font-size: 1em;
+    font-weight: bold;
+}
+
+ .lose-the-game {
+  color: #000000;
+ }
+
+
+ /* select button */
+ select {
+  width: 7%;
+  height: 5%;
+  padding: 4px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px #999;
+  background: #eee;
+  border: none;
+  outline: none;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  font-family: "OstrichSansHeavy";
+  text-align: center;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+  margin-bottom: 1%;
+}
+
+.text-experience {
+  position: absolute;
+  top: 15%;
+  left: 17%;
+
+}
+
+
+.main-title {
+  position: relative;
+  z-index: 99;
+  color: #ffffff;
+  font-family: "OstrichSans";
+  font-size: 4rem;
+  
+}
+
+.porject-title {
+  position: absolute;
+  z-index: 2;
+  color: #000000;
+  font-family: "OstrichSansHeavy";
+  font-size: 4rem;
+  top: 20%;
+  left: 20%;
+}
+
+.container {
+  position: absolute;
+  top: 20vh;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  gap: 10px;
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #6b6565;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("./photos/add-to-cart.PNG")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url("./photos/rock-paper-scissor.PNG")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url("https://images.pexels.com/photos/247322/pexels-photo-247322.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+        no-repeat 50% / cover;
+    }
+
+    .content {
+      font-size: 1.5rem;
+      font-family: "OstrichSans";
+      color: #000000;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(75, 75, 75);
+      background: linear-gradient(
+        0deg,
+        rgba(134, 134, 134, 0.676) 0%,
+        rgba(87, 87, 87, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 0.3rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #e0e0e0;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
