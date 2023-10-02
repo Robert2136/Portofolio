@@ -266,6 +266,7 @@ body{
   position: absolute;
   right: 9%;
   bottom:-100%;
+  z-index: 99;
 }
 .about-text {
   text-decoration: none;
@@ -328,7 +329,7 @@ body{
 /* EXPERIENCE TEXT EFFECT */
 #postion-experience {
   position: absolute;
-  z-index: 2;
+  z-index: 99;
   right: 9%;
   bottom:-290%;
 }
